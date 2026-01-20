@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0118;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: transparent;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ec4899, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #a855f7;
+}
+
+.gradient-btn {
+  background: linear-gradient(to right, #b9ab2b, #b51a82, #6b0f9c);
+
+  color: #ffffff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+}
+
+.gradient-btn span {
+  font-size: 22px;
+}
+
+/* ==================================== */
+
+.hero-section {
+  width: 100%;
+  height: 800px;
+  background: url("/assets/hero-bg.png") no-repeat center;
+  background-size: contain;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-bg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.icon-bg-container img {
+  background-image: url(./assets/microphone.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.hero-down-content {
+  text-align: center;
+}
+
+.hero-down-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+  color: white;
+}
+
+.hero-down-content p {
+  color: #94a3b8;
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-spotify {
+  background-color: #facc15;
+  border-radius: 50px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-subscribe {
+  background: none;
+  color: #10b981;
+  border: 1.5px solid #10b981;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ============================= */
+
+/* About Section Style */
+.about-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #0d0118;
+  color: white;
+}
+
+.about-section h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  color: #94a3b8;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-content .join-text {
+  margin-top: 40px;
+  font-weight: 500;
+}
+/* ========================== */
+
+/* Stats Section Style */
+.stats-section {
+  padding: 60px 8%;
+  background-color: #0d0118;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h2 {
+  color: #10b981;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* =========================== */
+
+/* Why Choose Section Styling */
+.why-choose-section {
+  padding: 100px 8%;
+  background-color: #0d0118;
+  color: white;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+/* Exact Layout Grid */
+.features-layout {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 25px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "tall small1 small1"
+    "tall small2 small2"
+    "wide wide small3";
+}
+
+.card-1 {
+  grid-area: tall;
+}
+.card-2 {
+  grid-area: small1;
+}
+.card-3 {
+  grid-area: small2;
+}
+.card-4 {
+  grid-area: wide;
+}
+.card-5 {
+  grid-area: small3;
+}
+
+.f-card {
+  background-color: #1a0b2e;
+  padding: 40px;
+  border-radius: 28px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.f-card h3 {
+  font-size: 22px;
+  margin: 20px 0 10px;
+}
+
+.f-card p {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.icon-box {
+  font-size: 32px;
+}
+/* ============================= */
+/* Featured Episodes Section Styles */
+.featured-episodes {
+  padding: 80px 8%;
+  background-color: #0d0118;
+  color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.episodes-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.episode-card {
+  background-color: #1a0b2e;
+  width: 380px;
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-10px);
+}
+
+.thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-button-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #facc15, #ec4899, #a855f7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+}
+
+.play-icon {
+  color: white;
+  font-size: 24px;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card-body h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.card-body p {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  height: 65px;
+}
+
+.duration {
+  color: #10b981;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+/* ================================= */
+
+/* Meet The Host Section Styles */
+.host-section {
+  padding: 100px 8%;
+  background-color: #0d0118;
+  color: white;
+  text-align: center;
+}
+
+.host-card {
+  background-color: #1a0b2e;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  text-align: left;
+}
+
+.host-image-container {
+  flex-shrink: 0;
+}
+
+.host-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #1a0b2e;
+}
+
+.host-info h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.host-info p {
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: linear-gradient(135deg, #facc15, #ec4899, #a855f7);
+  color: white;
+  transform: translateY(-3px);
+}
+/* =========================== */
+/* Footer Section Styling */
+.main-footer {
+  padding: 100px 20px 40px;
+  background-color: #0d0118;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-wave-bg {
+  position: relative;
+  z-index: 1;
+
+  background-image: url("footer-wave-bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-logo {
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: -3px;
+}
+
+.platform-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.platform-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.platform-links a:hover {
+  color: white;
+}
+
+.platform-links i {
+  font-size: 20px;
+}
+
+.copyright {
+  color: #64748b;
+  font-size: 14px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 30px;
+}
