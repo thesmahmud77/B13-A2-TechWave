@@ -80,7 +80,6 @@ body {
   height: 800px;
   background: url("/assets/hero-bg.png") no-repeat center;
   background-size: contain;
-  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,6 +131,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding: 12px 28px;
 }
 
 .btn-subscribe {
@@ -287,6 +287,7 @@ body {
   margin: 0 auto;
   justify-content: center;
   gap: 30px;
+  margin-top: 30px;
 }
 
 .Second-long-card {
@@ -295,6 +296,7 @@ body {
   color: white;
   border-radius: 20px;
   width: 60%;
+  text-align: start;
 }
 
 .Second-Short-card {
@@ -303,6 +305,7 @@ body {
   color: white;
   border-radius: 20px;
   width: 20%;
+  text-align: start;
 }
 /* ============================= */
 /* Featured Episodes Section Styles */
@@ -470,7 +473,7 @@ body {
   transform: translateY(-3px);
 }
 /* =========================== */
-/* Footer Section Styling */
+/* Footer Section*/
 .main-footer {
   padding: 100px 20px 40px;
   background-color: #0d0118;
@@ -529,4 +532,105 @@ body {
   margin-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 30px;
+}
+
+/* MOBILE RESPONSIVE */
+/* MOBILE RESPONSIVE */
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-action {
+    display: none;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: auto;
+    padding: 60px 20px;
+    background-size: cover;
+  }
+
+  .hero-down-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-spotify,
+  .btn-subscribe {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .choose-firs-wrapper,
+  .choose-2nd-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .short-width-wrapper,
+  .long-width-wrapper,
+  .Second-long-card,
+  .Second-Short-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .Width-short-Card {
+    height: auto;
+  }
+
+  .episodes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .episode-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* Host Section */
+  .host-card {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .host-info {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer-logo {
+    font-size: 40px;
+  }
+
+  .platform-links {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
